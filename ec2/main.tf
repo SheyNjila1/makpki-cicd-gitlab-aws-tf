@@ -37,7 +37,7 @@ resource "aws_autoscaling_group" "web_server_asg" {
 }
 
 resource "aws_security_group" "web_sg" {
-  name        = "MyKeyPair"
+  name = "web_sg"
   description = "Allow SSH inbound traffic, and HTTP inbound traffic"
   vpc_id      = var.vpc_id
 
